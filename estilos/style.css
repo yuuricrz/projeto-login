@@ -1,0 +1,96 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media screen and (max-width:767px) /* || Tela Pequena ||  */{
+    body{
+        background-color: #5F2C82;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    main{
+        background-color: white;
+        border-radius: 10px;
+        margin: 1rem;
+        width: 90vw;
+    }
+    #imagem{
+        background: url('../images/building.jpg') no-repeat center center;
+        background-size: cover;
+        height: 200px;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        margin-bottom: 0.5rem;
+    }
+    #form{
+        text-align: center;
+    }
+    #form p{
+        font-size: 0.8rem;
+        margin: 0.3rem auto;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        padding: 15px;
+    }
+    form img{
+        width: 26px;
+        filter: invert(1);
+        margin-right: 5px;
+    }
+    .login, .password{
+        padding: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 250px;
+        background-color: #5F2C82;
+        margin: 0.1rem auto;
+        border-radius: 10px;
+    }
+    [type="text"], [type="password"]{
+        height: 30px;
+        background-color:#94CFCD ;
+        border-radius: 10px;
+        max-width: 250px;
+        padding: 5px;
+        outline: none;
+    }
+    #enter, #forgot{
+        padding: 0.6rem 4rem;
+        max-width: 250px;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 0.3rem;
+        font-size: 1rem;
+        border-radius: 5px;
+    }
+    #enter{
+        color: white;
+        background-color: #94CFCD;
+        border: 1px solid #89bebd;
+    }
+    #forgot{
+        color: #94CFCD;
+        background-color: transparent;
+        border: 1px solid #465f5f;
+    }
+}
+
+@media screen and (min-width:767px) and (max-width:991px) /* || Tela Média || */ {
+    
+}
+
+@media screen and (min-width:991px) /* || Telas Grandes || */ {
+    
+}
