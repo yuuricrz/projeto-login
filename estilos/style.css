@@ -59,7 +59,7 @@
         margin: 0.1rem auto;
         border-radius: 10px;
     }
-    [type="text"], [type="password"]{
+    [type="email"], [type="password"]{
         height: 30px;
         background-color:#94CFCD ;
         border-radius: 10px;
@@ -141,7 +141,7 @@
         margin-right: 5px;
         padding-left: 5px;
     }
-    [type="text"], [type="password"]{
+    [type="email"], [type="password"]{
         height: 30px;
         background-color:#94CFCD ;
         border-radius: 10px;

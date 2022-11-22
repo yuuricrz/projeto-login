@@ -18,24 +18,24 @@
                     <h1>Login</h1>
                     <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
                 </div>
-                <form action="login.php" method="post">
+                <form action="login.php" method="post" autocomplete="on">
                     <div class="login">
                         <label for="textuser">
                             <img src="images/user.png" alt="user">
                         </label>
-                        <input type="text" name="" id="textuser" size="15" placeholder="seu e-mail">
+                        <input type="email" name="login" id="textuser" size="15" placeholder="seu e-mail" autocomplete="email" required maxlength="30">
                     </div>
                     <div class="password">
                         <label for="passworduser">
                             <img src="images/padlock.png" alt="password">
                         </label>
-                        <input type="password" name="" id="passworduser" size="15" placeholder="sua senha">
+                        <input type="password" name="senha" id="passworduser" size="15" placeholder="sua senha" autocomplete="current-password" required minlength="8" maxlength="20">
+                    </div>
+                    <div id="buttons">
+                        <input type="submit" value="Entrar" id="enter">
+                        <input type="button" value="Esqueci a senha ✉" id="forgot">
                     </div>
                 </form>
-                <div id="buttons">
-                    <input type="button" value="Entrar" id="enter">
-                    <input type="button" value="Esqueci a senha ✉" id="forgot">
-                </div>
         </div>
         </section>
     </main>
