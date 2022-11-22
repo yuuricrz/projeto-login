@@ -8,7 +8,7 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-@media screen and (max-width:767px) /* || Tela Pequena ||  */{
+@media screen and (min-width:200px) and (max-width:767px) /* || Tela Pequena ||  */{
     body{
         background-color: #5F2C82;
         min-height: 100vh;
@@ -16,7 +16,6 @@
         justify-content: center;
         align-items: center;
     }
-
     main{
         background-color: white;
         border-radius: 10px;
@@ -82,20 +81,126 @@
         background-color: #298d8a;
         border: 1px solid #89bebd;
     }
-    #forgot::after{
-        content: '\u{2709}';
-    }
     #forgot{
         color: #298d8a;
-        background-color: #9fdad8;
+        background-color: transparent;
         border: 1px solid #465f5f;
     }
 }
 
-@media screen and (min-width:767px) and (max-width:991px) /* || Tela Média || */ {
+
+
+
+
+
+
+@media screen and (min-width:768px) /* || Tela Média || */ {
+    body{
+        background-image:linear-gradient(to top, #49a09d, #5f2c82);
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    main{
+        background: white;
+        border-radius: 15px;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.308);
+        width: 700px;
+    }
+    #login{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-right: 15px ;
+    }
+    #imagem{
+        background: url('../images/building.jpg') no-repeat left bottom;
+        background-size: cover;
+        height: 300px;
+        width: 380px;
+        border-bottom-left-radius: 10px;
+        border-top-left-radius: 10px;
+        margin-right: 1rem;
+    }
+    #form{
+        text-align: center;
+        margin-bottom: px;
+    }
+    #form p{
+        font-size: 0.8rem;
+        margin: 0.8rem auto;
+        width: 350px;
+    }
+    form{
+        margin-bottom: 8px;
+    }
+    form img{
+        width: 26px;
+        filter: invert(1);
+        margin-right: 5px;
+        padding-left: 5px;
+    }
+    [type="text"], [type="password"]{
+        height: 30px;
+        background-color:#94CFCD ;
+        border-radius: 10px;
+        width: 350px;
+        padding: 5px;
+    }
+    .login, .password{
+        padding: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 380px;
+        background-color: #5F2C82;
+        margin: 0.1rem auto;
+        border-radius: 10px;
+    }
+    #enter, #forgot{
+        text-align: center;
+        padding: 0.6rem 4rem;
+        width: 380px;
+        margin-bottom: 0.3rem;
+        font-size: 1rem;
+        border-radius: 5px;
+    }
+    #enter{
+        color: white;
+        background-color: #298d8a;
+        border: 1px solid #89bebd;
+    }
+    #forgot{
+        color: #298d8a;
+        background-color: transparent;
+        border: 1px solid #465f5f;
+    }
+    #buttons{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
     
 }
 
 @media screen and (min-width:991px) /* || Telas Grandes || */ {
+    main{
+        padding-left: 10px;
+    }
+    #login{
+        flex-direction: row-reverse;
+        padding: 0;
+    }
+    #imagem{
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 0;
+        border-top-left-radius:0 ;
+        width: 350px;
+        margin-right: 0;
+        margin-left: 1rem;
+    }
     
 }
